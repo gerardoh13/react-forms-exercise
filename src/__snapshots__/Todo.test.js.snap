@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="ms-3"
+  >
+    NaN. 
+    <span
+      class=""
+    />
+    <span
+      class="ms-2"
+    >
+      <button
+        class="btn btn-secondary btn-sm me-2"
+      >
+        ✎
+      </button>
+      <button
+        class="btn btn-success btn-sm"
+      >
+        ✔
+      </button>
+      <button
+        class="btn btn-danger btn-sm ms-2"
+      >
+        x
+      </button>
+    </span>
+  </div>
+  <hr />
+</DocumentFragment>
+`;

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="row mb-3 mt-5"
+  >
+    <div
+      class="col"
+    >
+      <input
+        checked=""
+        class="btn-check"
+        id="boxes"
+        name="display"
+        type="radio"
+        value="boxes"
+      />
+      <label
+        class="btn btn-outline-secondary"
+        for="boxes"
+      >
+        Boxes
+      </label>
+    </div>
+    <div
+      class="col"
+    >
+      <input
+        class="btn-check"
+        id="todo"
+        name="display"
+        type="radio"
+        value="todo"
+      />
+      <label
+        class="btn btn-outline-secondary"
+        for="todo"
+      >
+        Todos
+      </label>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import BoxList from "./BoxList";
+import TodoList from "./TodoList";
+import Toggle from "./Toggle";
+import "./App.css";
 
 function App() {
+  const [shown, setShown] = useState("boxes");
+
+  const toggleApp = (tab) => {
+    setShown(tab);
+  };
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Toggle toggleApp={toggleApp} />
+      <h1 className="mb-4">
+        {shown === "boxes" ? "Color Box Maker!" : "Todo List!"}
+      </h1>
+      {shown === "boxes" ? <BoxList /> : <TodoList />}
     </div>
   );
 }
